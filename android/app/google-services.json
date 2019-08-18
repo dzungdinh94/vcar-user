@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "724301750996",
+    "firebase_url": "https://devvcar-d15f2.firebaseio.com",
+    "project_id": "devvcar-d15f2",
+    "storage_bucket": "devvcar-d15f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724301750996:android:6297cd4fa178c3bb",
+        "android_client_info": {
+          "package_name": "com.aliki.vcar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArDar6oDZlYsWavXaCqqE-vWTB4M6fKX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724301750996-5taaoub6hev4mb6588shg58fcgltrl7j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
