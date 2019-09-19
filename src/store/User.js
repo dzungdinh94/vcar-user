@@ -42,11 +42,11 @@ class User {
 
   @action
   login(json, callback = null) {
-    console.log('json: login ' + JSON.stringify(json))
+    // console.log('json: login ' + JSON.stringify(json))
     PostNoToken(api.login, json, (data, status) => {
       if (status) {
         if (data.ResponseCode) {
-          console.log('data: ' + JSON.stringify(data))
+          // console.log('data: ' + JSON.stringify(data))
           this.token = data.data.token;
           AsyncStorage.setItem('token', data.data.token);
           this.getUserInfo()
@@ -67,10 +67,10 @@ class User {
     // GetWithToken(api.getInfo, this.token, (data, status) => {
     //   console.log('getInfo ' + JSON.stringify(data))
     // })
-    console.log("GetUserrrrrrrr")
+    // console.log("GetUserrrrrrrr")
 
     GetWithToken(api.getInfo, this.token, (data, status) => {
-      console.log('getInfo ' + JSON.stringify(data))
+      // console.log('getInfo ' + JSON.stringify(data))
       if (status) 
       {
         if (data.ResponseCode) {
