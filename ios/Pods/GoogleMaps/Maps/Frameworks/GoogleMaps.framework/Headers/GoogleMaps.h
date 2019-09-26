@@ -26,7 +26,6 @@
 #import "GMSPolygon.h"
 #import "GMSPolygonLayer.h"
 #import "GMSPolyline.h"
-#import "GMSStrokeStyle.h"
 #import "GMSSyncTileLayer.h"
 #import "GMSTileLayer.h"
 #import "GMSURLTileLayer.h"

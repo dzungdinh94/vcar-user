@@ -8,7 +8,8 @@
     "android": "react-native run-android",
     "androidx": "npx jetifier",
     "clean": "cd android && ./gradlew clean",
-    "reset": "rm -rf /tmp/haste-map-react-native-packager-* && rm -rf node_modules && yarn && npx jetifier && yarn start --reset-cache"
+    "reset": "rm -rf /tmp/haste-map-react-native-packager-* && rm -rf node_modules && yarn && npx jetifier && yarn start --reset-cache",
+    "openXcode": "cd ios && open vcarUser.xcworkspace/"
   },
   "dependencies": {
     "@mapbox/geo-viewport": "^0.4.0",

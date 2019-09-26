@@ -62,15 +62,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)openSourceLicenseInfo;
 
 /**
- * Returns the version for this release of the Google Maps SDK for iOS. For example, "1.0.0"
+ * Returns the version for this release of the Google Maps SDK for iOS.
  */
 + (NSString *)SDKVersion;
-
-/**
- * Returns the long version for this release of the Google Maps SDK for iOS. For example, "1.0.0
- * (102.1)".
- */
-+ (NSString *)SDKLongVersion;
 
 @end
 

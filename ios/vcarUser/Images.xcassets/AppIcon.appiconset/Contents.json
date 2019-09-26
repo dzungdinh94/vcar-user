@@ -149,30 +149,6 @@
       "idiom" : "ios-marketing",
       "filename" : "icon_laucher.png",
       "scale" : "1x"
-    },
-    {
-      "size" : "40x40",
-      "idiom" : "iphone",
-      "filename" : "icon_laucher-41.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "60x60",
-      "idiom" : "iphone",
-      "filename" : "icon_laucher-60@2x-1.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "76x76",
-      "idiom" : "iphone",
-      "filename" : "icon_laucher-77.png",
-      "scale" : "1x"
-    },
-    {
-      "size" : "76x76",
-      "idiom" : "ipad",
-      "filename" : "icon_laucher-76@2x.png",
-      "scale" : "3x"
     }
   ],
   "info" : {
