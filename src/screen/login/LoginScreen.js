@@ -78,14 +78,14 @@ class LoginScreen extends Component {
   async _getCurrentAccount() {
     let self = this;
     let { User, OnApp } = self.props;
-    // console.log('=================getCurrentAccount===================');
-    // console.log('User.fcmId: ' + User.fcmId);
-    // console.log('====================================');
+    console.log('=================getCurrentAccount===================');
+    console.log('User.fcmId: ' + User.fcmId);
+    console.log('====================================');
 
     await RNAccountKit.getCurrentAccount()
       .then(function(account) {
         // {"id":"302539490546101","phoneNumber":{"countryCode":"84","number":"373343623"}}
-        // console.log(`Current account:` + JSON.stringify(account))
+        console.log(`Current account:` + JSON.stringify(account))
         let json = {
           // phone: account.phoneNumber.countryCode + '' + account.phoneNumber.number,
           phone: '0' + account.phoneNumber.number,
@@ -96,13 +96,8 @@ class LoginScreen extends Component {
         }
         User.login(json, (data, status) => {
           if (status) {
-            // console.log(status)
-            OnApp.countNotif(User.token);
-            User.getUserInfo((status)=>{
-              if(status){
-                self.goToApp()
-              }
-            })
+            console.log(status)
+            OnApp.countNotif(User.token)
           }
         })
       }).catch(function(error) {
@@ -113,9 +108,9 @@ class LoginScreen extends Component {
   }
 
   goToApp() {
-    // setTimeout(() => {
+    setTimeout(() => {
       showApp()
-    // }, 500);
+    }, 500);
   };
 
   getFCM() {
@@ -155,11 +150,11 @@ class LoginScreen extends Component {
           console.log("Login cancelled");
         } else {
           //  this.loginPhoneToServer(token);
-          // console.log(`Logged with phone. Token:` + JSON.stringify(token));
+          console.log(`Logged with phone. Token:` + JSON.stringify(token));
           self._getCurrentAccount()//lấy số điện thoại
 
           // Retrieves the logged user access token, if any user is logged
-          // self.goToApp()
+          self.goToApp()
         }
       })
       .catch(error => {
@@ -176,20 +171,20 @@ class LoginScreen extends Component {
   onClickLoginFb = () => {
     // showApp()
     // LoginManager.logOut();
-    LoginManager.logInWithReadPermissions([
+    LoginManager.logInWithPermissions([
       "public_profile"
     ])
       .then(result => {
         if (result.isCancelled) {
           console.log("Login cancelled");
         } else {
-          // console.log(
-          //   "Login success with permissions: " + JSON.stringify(result)
-          // );
+          console.log(
+            "Login success with permissions: " + JSON.stringify(result)
+          );
 
           AccessToken.getCurrentAccessToken()
             .then(data => {
-              // console.log('data.accessToken.toString(): ' + data.accessToken.toString());
+              console.log('data.accessToken.toString(): ' + data.accessToken.toString());
               //   this.props.User.loginFBAccount(data.accessToken.toString());
               this.setState({
                 tokenfb: data.accessToken.toString()
@@ -221,9 +216,9 @@ class LoginScreen extends Component {
   _responseInfoCallback(error: ?Object, result: ?Object) {
     let self = this;
     let { User, OnApp } = self.props;
-    // console.log('================_responseInfoCallback====================');
-    // console.log('User.fcmId: ' + User.fcmId);
-    // console.log('====================================');
+    console.log('================_responseInfoCallback====================');
+    console.log('User.fcmId: ' + User.fcmId);
+    console.log('====================================');
     if (error) {
       // console.error(error)
       console.log(error);
@@ -241,9 +236,9 @@ class LoginScreen extends Component {
       this.setState({
         info: json
       })
-      // console.log('json: ' + JSON.stringify(json))
+      console.log('json: ',json)
       User.login(json, (data, status) => {
-        // console.log('data------: ' + JSON.stringify(data))
+        console.log('data------: ' + JSON.stringify(data))
         if (status) {
           // OnApp.countNotif(User.token)
           if (!data.phone) {
@@ -333,9 +328,7 @@ class LoginScreen extends Component {
           width: '100%', alignItems: 'center', justifyContent: 'center',
           backgroundColor: 'transparent', paddingBottom: 20, paddingHorizontal: 15,
         }}>
-          <TouchableOpacity onPress={this.onClickLoginWithPhone} style={[styles.btnLogin, styles.shadowPhone,]}>
-            <Text style={styles.txtLogin}>{'Đăng nhập với điện thoại'.toUpperCase()}</Text>
-          </TouchableOpacity>
+
           <TouchableOpacity onPress={this.onClickLoginFb} style={[styles.btnLoginFb, styles.shadowFB]}>
             <Text style={styles.txtLoginFb}>{'Đăng nhập với Facebook'.toUpperCase()}</Text>
             <View style={[{

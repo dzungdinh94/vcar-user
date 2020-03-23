@@ -1,7 +1,7 @@
 export default {
     navBarBackgroundColor: '#278AC5',
     navBarTextColor: 'white',
-    primaryColor: '#f7a430',
+    primaryColor: '#5C2E91',
     backgroundBtnFb: '#9FC5F8',
     colorBorderRadius: 'black',
     lineColor: '#dce0ee',

@@ -13,7 +13,7 @@ const api_key_ios = 'AIzaSyD88Gjas9RUVIUmMF1LWYSo3TMi8V-P434'
 let config = {}
 const status_api_google = { ZERO_RESULTS: 'ZERO_RESULTS', OVER_QUERY_LIMIT: 'OVER_QUERY_LIMIT', OK: 'OK' }
 config.app_version = '0.0.1'
-config.domain = "http://128.199.236.30:3001"
+config.domain = "https://pacific-stream-38316.herokuapp.com"
 config.socket = null;
 config.type_socket_notif = {
     acceptedorder: 'acceptedorder',

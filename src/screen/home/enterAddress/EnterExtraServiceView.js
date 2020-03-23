@@ -49,7 +49,7 @@ class EnterExtraServiceView extends Component {
               }</Text>
             </Text>
             <Text>{'/ người. Cảm ơn quý khách đã sử dụng dịch vụ.'}</Text> */}
-            <Text>Mang đến dịch vụ khách hàng tốt hơn V-car cung cấp dịch vụ đặt xe trước tại </Text>
+            <Text>Mang đến dịch vụ khách hàng tốt hơn GoTaxi cung cấp dịch vụ đặt xe trước tại </Text>
             <Text style={{ fontWeight: 'bold', fontSize: 14, color: 'rgba(0, 0, 0, 0.80)' }}>gotaxi.vn </Text>
             <Text>và dịch vụ thuê xe theo ngày tại </Text>
             <Text style={{ fontWeight: 'bold', fontSize: 14, color: 'rgba(0, 0, 0, 0.80)' }}>gotaxi.vn</Text>
@@ -66,7 +66,7 @@ class EnterExtraServiceView extends Component {
             </TouchableOpacity>
           </View>
         </View>
-      </TouchableOpacity>
+      </TouchableOpacity >
     );
   }
 }
