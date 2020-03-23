@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Vcar Quy Nhơn</string>
+    <string name="app_name">GoTaxi</string>
      <string name="FACEBOOK_APP_ID">2162271700477118</string>
     <string name="ak_login_protocol_scheme">ak2162271700477118</string>
     <string name="ACCOUNT_KIT_CLIENT_TOKEN">988b1499a8d0a020e624ea4a5bed7dde</string>

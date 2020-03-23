@@ -226,7 +226,7 @@ class LoginScreen extends Component {
       console.log("data:FB " + JSON.stringify(result));
 
       let json = {
-        phone: '123',
+        phone: '',
         fullname: result.name,
         avatar: `https://graph.facebook.com/${result.id}/picture?height=300&width=300`,
         tokenfb: self.state.tokenfb,
