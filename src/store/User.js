@@ -42,7 +42,7 @@ class User {
 
   @action
   login(json, callback = null) {
-    console.log('json: login ' + JSON.stringify(json))
+    console.log('json: login ',json)
     PostNoToken(api.login, json, (data, status) => {
       if (status) {
         if (data.ResponseCode) {

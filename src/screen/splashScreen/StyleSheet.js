@@ -9,7 +9,7 @@ export default StyleSheet.create({
     backgroundColor: color.primaryColor,
     justifyContent: 'center',
   },
-  logo: { height: values.deviceWidth * 0.45, width: values.deviceWidth * 0.45, resizeMode: 'contain',backgroundColor:"#fff" },
+  logo: { height: values.deviceWidth * 0.45, width: values.deviceWidth * 0.45, resizeMode: 'contain',backgroundColor:"transparent" },
   version: { width: values.deviceWidth - 50, backgroundColor: 'transparent', justifyContent: 'center', alignItems: 'flex-end', },
   textVersion: { textAlign: 'right', fontSize: 10, fontWeight: 'bold', backgroundColor: 'transparent', color: 'white' },
   textDisconnect: {

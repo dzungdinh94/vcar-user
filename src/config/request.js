@@ -37,6 +37,7 @@ export function PostNoToken(url, json, callback) {
         baseURL: config.domain
     });
     instance.post(url, json).then(function (response) {
+        console.log(response)
         callback(response.data, true);
     }).catch(function (error) {
         callback(error, true);

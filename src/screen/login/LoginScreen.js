@@ -171,7 +171,7 @@ class LoginScreen extends Component {
   onClickLoginFb = () => {
     // showApp()
     // LoginManager.logOut();
-    LoginManager.logInWithReadPermissions([
+    LoginManager.logInWithPermissions([
       "public_profile"
     ])
       .then(result => {
@@ -226,7 +226,7 @@ class LoginScreen extends Component {
       console.log("data:FB " + JSON.stringify(result));
 
       let json = {
-        phone: '',
+        phone: '123',
         fullname: result.name,
         avatar: `https://graph.facebook.com/${result.id}/picture?height=300&width=300`,
         tokenfb: self.state.tokenfb,
@@ -236,7 +236,7 @@ class LoginScreen extends Component {
       this.setState({
         info: json
       })
-      console.log('json: ' + JSON.stringify(json))
+      console.log('json: ',json)
       User.login(json, (data, status) => {
         console.log('data------: ' + JSON.stringify(data))
         if (status) {
@@ -328,9 +328,7 @@ class LoginScreen extends Component {
           width: '100%', alignItems: 'center', justifyContent: 'center',
           backgroundColor: 'transparent', paddingBottom: 20, paddingHorizontal: 15,
         }}>
-          <TouchableOpacity onPress={this.onClickLoginWithPhone} style={[styles.btnLogin, styles.shadowPhone,]}>
-            <Text style={styles.txtLogin}>{'Đăng nhập với điện thoại'.toUpperCase()}</Text>
-          </TouchableOpacity>
+
           <TouchableOpacity onPress={this.onClickLoginFb} style={[styles.btnLoginFb, styles.shadowFB]}>
             <Text style={styles.txtLoginFb}>{'Đăng nhập với Facebook'.toUpperCase()}</Text>
             <View style={[{

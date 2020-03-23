@@ -50,9 +50,9 @@ class EnterExtraServiceView extends Component {
             </Text>
             <Text>{'/ người. Cảm ơn quý khách đã sử dụng dịch vụ.'}</Text> */}
             <Text>Mang đến dịch vụ khách hàng tốt hơn V-car cung cấp dịch vụ đặt xe trước tại </Text>
-            <Text style={{ fontWeight: 'bold', fontSize: 14, color: 'rgba(0, 0, 0, 0.80)' }}>v-car.vn </Text>
+            <Text style={{ fontWeight: 'bold', fontSize: 14, color: 'rgba(0, 0, 0, 0.80)' }}>gotaxi.vn </Text>
             <Text>và dịch vụ thuê xe theo ngày tại </Text>
-            <Text style={{ fontWeight: 'bold', fontSize: 14, color: 'rgba(0, 0, 0, 0.80)' }}>xedulichquynhon.vn</Text>
+            <Text style={{ fontWeight: 'bold', fontSize: 14, color: 'rgba(0, 0, 0, 0.80)' }}>gotaxi.vn</Text>
             <Text>! Cám ơn quý khách đã sử dụng dịch vụ! </Text>
           </Text>
 
