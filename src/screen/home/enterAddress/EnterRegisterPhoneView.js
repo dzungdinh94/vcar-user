@@ -65,7 +65,7 @@ class EnterRegisterPhoneView extends Component {
             </TouchableOpacity>
           </View>
         </View>
-      </TouchableOpacity >
+      </TouchableOpacity>
     );
   }
 }

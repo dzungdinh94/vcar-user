@@ -53,7 +53,7 @@ class SuggestAddressFlatListItem extends React.PureComponent {
                             {item.description}
                         </Text>
                     </View>
-                </TouchableNativeFeedback >
+                </TouchableNativeFeedback>
         )
     }
 }
