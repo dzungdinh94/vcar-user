@@ -70,7 +70,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:value="false" />
       <meta-data
       android:name="com.google.android.geo.API_KEY"
-      android:value="AIzaSyDFo25Iifbmcf3TzTmOF6IR5adrQw4tY7o" />
+      android:value="AIzaSyAihOJTXkGtt8Dr-_Y0kdpws9crkGQFYD4" />
       <meta-data
       android:name="com.google.android.gms.version"
       android:value="@integer/google_play_services_version" />
